@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
+  <!-- BEGIN PART 1 -->
+  <link rel="stylesheet" href="styles.css">
+  <title>Janani Sriram</title>
+  <!-- END PART 1 -->
+</head>
+
+<body class="light" id="top">
+  <header class="header center">
+    <!-- BEGIN PART 2 -->
+    <h3>
+      <a href="file:///Users/janani/Documents/College_Freshman/Cubstart_Full_Stack/hw1/index.html" style="color: var(--clr-primary)">JS</a>
+    </h3>
+    <!-- END PART 2 -->
+    <nav class="nav center">
+      <ul class="nav__list center">
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#projects">Projects</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#projects">Professional Experience</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#projects">Clubs and Activities</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#skills">Skills</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      <!-- BEGIN PART 5 -->
+
+      <button type="button" aria-label="toggle theme" class="btn btn--icon">
+        <i id="btn-theme" class="fas fa-moon"></i>
+      </button>
+
+      <!-- 
+        5.1: What does this button tag correspond to on the site? 
+      
+        switching between light and dark mode
+      -->
+
+      <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- 
+        5.2: Try Ctrl-F in styles.css and look the class 'nav__hamburger'. You'll notice that it
+        appears in 2 places. Why is one of the rules 'display: none' on one instance? How do you
+        make it so that this button appears on screen? 
+        Hint: remember what @media (max-width: 600px) means.
+
+        The button is shown when the display is a certain size. Make the display flexible to make the button appear.
+       -->
+
+      <!-- END PART 5 -->
+    </nav>
+  </header>
+
+  <main>
+    
+    <div class="top_intro">
+    
+      <div class="about class">
+        <!-- BEGIN PART 6 -->
+        <h1>Hi, I'm <span class="about__name">Janani</span></h1>
+        <h2 class="about__role">CS @ UC Berkeley</h2>
+        <p class="about__desc">I am a freshman studying computer science at UC Berkeley interested in precision medicine and healthcare economics.</p>
+        <!-- END PART 6 -->
+        <div class="about__contact center">
+          <a href="file:///Users/janani/Downloads/Janani_Sriram_Resume.pdf">
+            <span class="btn btn--outline">Resume</span>
+          </a>
+
+          <a href="https://github.com/jananisriram" aria-label="github" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/janani-sriram/" aria-label="linkedin" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="img">
+        <img src="file:///Users/janani/Downloads/Janani_Headshot_Center_Square.jpg" alt="headshot" width="400px" height="400px" style="border-radius: 50%;">
+      </div>
+
+
+    </div>
+
+    <section id="projects" class="section projects">
+      <h2 class="section__title">Projects</h2>
+      <div class="projects__grid">
+        <!-- BEGIN PART 8 -->
+        <div class="project">
+          <h3>RED x Adobe</h3>
+          <p class="project__description">
+            Developing platform to transfer metadata from RED cameras to Adobe cloud platform.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">C</li>
+            <li class="project__stack-item">Adobe Cloud</li>
+          </ul>
+          <!--
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          -->
+          <a href="https://www.red.com/" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="project">
+          <h3>CheRMiT</h3>
+          <p class="project__description">
+            Exploring ways to develop and streamline ML and NLP pipeline which mines cheminformatics data from scientific research papers.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Python</li>
+            <li class="project__stack-item">Jupyter Hub</li>
+          </ul>
+
+          <a href="https://github.com/igematberkeley/chermit" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <!--
+          <a href="https://example.com" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+          -->
+        </div>
+
+        <div class="project">
+          <h3>Gitlet</h3>
+          <p class="project__description">
+            Developed version control software based off the popular system Git.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Java</li>
+          </ul>
+
+          <a href="https://github.com/jananisriram/gitlet" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <!--
+          <a href="https://example.com" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+          -->
+        </div>
+        <!-- END PART 8 -->
+      </div>
+
+      <div class="projects__grid">
+        <div class="project">
+          <h3>Scheme Interpreter</h3>
+          <p class="project__description">
+            Created a Scheme interpreter using Python.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Python</li>
+            <li class="project__stack-item">Scheme</li>
+          </ul>
+
+          <a href="https://github.com/jananisriram/scheme-interpreter" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <!--
+          <a href="https://example.com" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+          -->
+        </div>
+
+        <div class="project">
+          <h3>SARS-CoV-2 Bioinformatics Internship</h3>
+          <p class="project__description">
+            Investigated host immune responses to SARS-CoV-2 variants, specifically spike protein conformations, with genomic data analysis and machine learning tools.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Python</li>
+            <li class="project__stack-item">R</li>
+          </ul>
+
+          <!--
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          -->
+          <a href="https://pine-biotech.com/" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="experience" class="section experience">
+      <h2 class="section__title">Professional Experience</h2>
+      <div class="projects__grid">
+        <!-- BEGIN PART 8 -->
+        <div class="project">
+          <h3>CS Mentors</h3>
+          <p class="project__description">
+            Teaching and reviewing critical data structures concepts in Java with 5 undergraduate students.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Java</li>
+          </ul>
+
+          <!--
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          -->
+          <a href="https://csmentors.berkeley.edu/#/bios/cs61b" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="project">
+          <h3>CS Course Staff - Academic Intern</h3>
+          <p class="project__description">
+            Assist undergraduates with data structures concepts and questions on labs, homework, and projects in CS 61B (Java) and CS 61A (Python).
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Python</li>
+            <li class="project__stack-item">Java</li>
+            <li class="project__stack-item">JavaScript</li>
+          </ul>
+
+          <!--
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          -->
+          <a href="https://inst.eecs.berkeley.edu/~cs61b/sp22/" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="project">
+          <h3>Code for Fun - Instructor</h3>
+          <p class="project__description">
+            Teach programming concepts in Scratch, Python, and HTML to elementary and middle schoolers.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Python</li>
+            <li class="project__stack-item">Java</li>
+            <li class="project__stack-item">JavaScript</li>
+          </ul>
+
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <a href="https://example.com" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+        <!-- END PART 8 -->
+      </div>
+    </section>
+
+
+    <section id="experience" class="section experience">
+      <h2 class="section__title">Clubs and Activities</h2>
+      <div class="projects__grid">
+        <!-- BEGIN PART 8 -->
+        <div class="project">
+          <h3>UpSync Consulting - Technical Consultant</h3>
+          <p class="project__description">
+            Develop technological and business solutions for startups, learn critical professional development, networking, and interview strategies.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">C</li>
+          </ul>
+
+          <!--
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          -->
+          <a href="https://www.upsyncberkeley.com/" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+        
+        <div class="project">
+          <h3>SAAS Berkeley - Career Exploration Committee</h3>
+          <p class="project__description">
+            Learn critical data science and machine learning skills in Python (NumPy, Pandas) through workshops and independent projects.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Python (NumPy, Pandas)</li>
+          </ul>
+
+          <!--
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          -->
+          <a href="https://saas.berkeley.edu/" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="project">
+          <h3>Berkeley Economic Review - Web Developer</h3>
+          <p class="project__description">
+            Transition website from Wordpress to Wix with web development team, implement new features to promote user accessibility and interest.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Wix</li>
+            <li class="project__stack-item">Wordpress</li>
+          </ul>
+
+          <!--
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          -->
+          <a href="https://econreview.berkeley.edu/" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="project">
+          <h3>iGEM at Berkeley - Developer</h3>
+          <p class="project__description">
+            Developing CheRMiT cheminformatics pipeline with high accuracy and low false-positive rate.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Python</li>
+          </ul>
+
+          <!--
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          -->
+          <a href="https://www.ocf.berkeley.edu/~igem/" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+        <!-- END PART 8 -->
+      </div>
+    </section>
+
+
+    <section class="section skills" id="skills">
+      <!-- BEGIN PART 10 -->
+      <h2 class="section__title">Skills</h2>
+      <ul class="skills__list">
+        <li class="skills__list-item btn btn--plain">Algorithms</li>
+        <li class="skills__list-item btn btn--plain">Data Analytics</li>
+        <li class="skills__list-item btn btn--plain">Genomics</li>
+        <li class="skills__list-item btn btn--plain">Teaching Pedagogy</li>
+      </ul>
+      <!-- END PART 10 -->
+    </section>
+    <section class="section contact center" id="contact">
+      <h2 class="section__title">Contact</h2>
+      <a href="mailto:janani.sriram@berkeley.edu">
+        <span class="btn btn--outline" style="margin-left: 493px; margin-right: 493px;">
+          Email me
+        </span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <!-- BEGIN PART 12 -->
+    <a href="/" class="link footer__link">
+      Created By Janani Sriram
+    </a>
+    <!-- END PART 12 -->
+  </footer>
+
+
+  <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
